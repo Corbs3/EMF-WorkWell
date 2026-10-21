@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "WorkWell",
+  "version": "1.5.0",
+  "description": "Healthy working reminders, a DSE self-check and wellbeing tools for your working day.",
+  "permissions": ["storage", "alarms", "notifications", "idle", "identity", "identity.email"],
+  "host_permissions": ["https://hooks.slack.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
